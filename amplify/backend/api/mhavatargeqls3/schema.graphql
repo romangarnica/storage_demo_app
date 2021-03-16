@@ -1,0 +1,64 @@
+input UserInput {
+    name: String!
+    lastname: String!
+    address: String!
+    cellphone: String!
+}
+
+input UserEditInput {
+    name: String
+    lastname: String
+    address: String
+    cellphone: String
+}
+
+type UserModel @model { #@auth(rules: [{ allow: public }])
+    "Return Users"
+    id: ID!
+    name: String!
+    lastname: String!
+    address: String!
+    cellphone: String!
+    role: Role
+    image: String
+}
+
+type ProcessModel @model  { # @auth(rules: [{ allow: groups, groups: ["Manager"] }])
+    "Return Process"
+    id: ID!
+    case_number: String!
+    description: String!
+}
+
+input ProcessInput {
+    case_number: String!
+    description: String! 
+}
+
+input ProcessEditInput {
+    case_number: String
+    description: String
+}
+
+enum Role {
+    PARALEGAL
+    MANAGER
+    FOREIGNNATIONAL
+    EMPLOYER
+    GLOBALPARTNER
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+type Picture @model  { #@auth(rules: [{allow: public}])
+  id: ID!
+  name: String
+  owner: String
+
+  # Reference the S3Object type from a field.
+  file: S3Object
+}

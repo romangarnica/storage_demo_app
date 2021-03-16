@@ -1,0 +1,20 @@
+{
+  "avatargql": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mhavatargeqls3-avatargql-125113-authRole",
+      "UnauthRoleArn": "arn:aws:iam::183200566001:role/amplify-mhavatargeqls3-avatargql-125113-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::183200566001:role/amplify-mhavatargeqls3-avatargql-125113-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mhavatargeqls3-avatargql-125113-deployment",
+      "UnauthRoleName": "amplify-mhavatargeqls3-avatargql-125113-unauthRole",
+      "StackName": "amplify-mhavatargeqls3-avatargql-125113",
+      "StackId": "arn:aws:cloudformation:us-east-1:183200566001:stack/amplify-mhavatargeqls3-avatargql-125113/c8126450-6fbe-11eb-9497-0a3238f55eb3",
+      "AmplifyAppId": "d1yftq3cxsvr8a"
+    },
+    "categories": {
+      "auth": {
+        "mhavatargeqls325f17c62": {}
+      }
+    }
+  }
+}
